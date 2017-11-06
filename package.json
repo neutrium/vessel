@@ -1,0 +1,34 @@
+{
+  "name": "@neutrium/vessel",
+  "version": "1.0.0",
+  "description": "The vessel/tank module of the Neutrium library",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -r ./dist/*",
+    "tsc": "tsc",
+    "build": "npm run tsc",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neutrium/vessel.git"
+  },
+  "keywords": [
+    "neutrium",
+    "vessel",
+    "tank"
+  ],
+  "author:": "Trevor Walker <trevorw@neutrium.net> (https://neutrium.net)",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/neutrium/vessel/issues"
+  },
+  "homepage": "https://github.com/neutrium/vessel#readme",
+  "dependencies": {
+    "@neutrium/quantity": "^3.0.7"
+  },
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
+}
